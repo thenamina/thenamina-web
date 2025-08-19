@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
+import { Noto_Sans_TC } from 'next/font/google';
 import './globals.css';
+
+const noto = Noto_Sans_TC({ weight: ['400','700','900'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'The Namina — AI 八字起名平台',
@@ -19,14 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-HK">
-      <body
-        style={{
-          margin: 0,
-          fontFamily:
-            '-apple-system, system-ui, Segoe UI, Roboto, Noto Sans, PingFang HK, sans-serif',
-          background: '#f7fbff',
-        }}
-      >
+      <body className={noto.className}>
         {children}
       </body>
     </html>
