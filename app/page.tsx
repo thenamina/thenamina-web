@@ -1,43 +1,42 @@
+import Image from 'next/image';
+
 export default function HomePage() {
   return (
     <main>
-      {/* 🚀 Hero 區 */}
-<section style={{ 
-  padding: "80px 20px", 
-  textAlign: "center", 
-  background: "linear-gradient(135deg, #f0f4ff, #e6f0ff)" 
-}}>
-  <h1 style={{ 
-    fontSize: "48px", 
-    fontWeight: 900, 
-    marginBottom: "20px",
-    color: "#1a1a1a" 
-  }}>
-    The Namina
-  </h1>
+      {/* Hero 區 */}
+      <section className="hero">
+        <div className="container hero-wrap">
+          {/* 左邊文字 */}
+          <div className="hero-left">
+            <div className="brand-badge">THE NAMINA</div>
+            <h1 className="hero-title">AI 八字起名平台</h1>
+            <p className="hero-sub">
+              結合 <strong>八字喜用</strong> × <strong>父母期望</strong> × <strong>粵普音律</strong>，
+              一鍵產生<strong>高質 3 個候選名</strong>（HK$10）。
+            </p>
 
-  <p style={{ 
-    fontSize: "20px", 
-    color: "#444", 
-    maxWidth: "600px", 
-    margin: "0 auto 30px" 
-  }}>
-    AI 八字智能起名平台 ✨  
-    結合專業算法，為你提供獨一無二嘅名字建議。
-  </p>
-  <section style={{ textAlign: "center", padding: "80px 20px" }}>
-  <h1 style={{ fontSize: "48px", fontWeight: 900, marginBottom: "20px" }}>
-    The Namina
-  </h1>
-  <p style={{ fontSize: "20px", color: "#444", maxWidth: "600px", margin: "0 auto 30px" }}>
-    AI 中文改名平台 — 一鍵生成獨特又有寓意嘅名字。
-  </p>
+            <div className="hero-ctas">
+              <a href="/name" className="cta">立即試用</a>
+              <a href="/about" className="cta-outline">了解更多</a>
+            </div>
+          </div>
 
-  <div style={{ display: "flex", justifyContent: "center", gap: "16px" }}>
-    <a href="/name" className="cta">立即試用</a>
-    <a href="/about" className="cta-outline">了解更多</a>
-  </div>
-</section>
+          {/* 右邊圖片 */}
+          <div className="hero-right">
+            <Image
+              src="/hero.png"
+              alt="The Namina hero"
+              width={760}
+              height={520}
+              priority
+              className="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
 
       {/* 原本嘅內容 */}
       <section style={{ maxWidth: 960, width: '100%', padding: '32px 20px', margin: '0 auto' }}>
