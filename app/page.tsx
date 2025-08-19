@@ -25,8 +25,18 @@ export default function HomePage() {
     AI 八字智能起名平台 ✨  
     結合專業算法，為你提供獨一無二嘅名字建議。
   </p>
+  <section style={{ textAlign: "center", padding: "80px 20px" }}>
+  <h1 style={{ fontSize: "48px", fontWeight: 900, marginBottom: "20px" }}>
+    The Namina
+  </h1>
+  <p style={{ fontSize: "20px", color: "#444", maxWidth: "600px", margin: "0 auto 30px" }}>
+    AI 中文改名平台 — 一鍵生成獨特又有寓意嘅名字。
+  </p>
 
-  <a className="cta" href="/name">立即試用（送 1 個名）</a>
+  <div style={{ display: "flex", justifyContent: "center", gap: "16px" }}>
+    <a href="/name" className="cta">立即試用</a>
+    <a href="/about" className="cta-outline">了解更多</a>
+  </div>
 </section>
 
       {/* 原本嘅內容 */}
@@ -62,6 +72,10 @@ export default function HomePage() {
             <li>父母輸入期望元素進行優化</li>
             <li>專業審核確保寓意與發音美感</li>
           </ul>
+          <div style={{ display: "flex", justifyContent: "center", gap: "16px", marginTop: "20px" }}>
+  <a href="/name" className="cta">立即試用</a>
+  <a href="/about" className="cta-outline">了解更多</a>
+</div>
         </div>
       </section>
     </main>
