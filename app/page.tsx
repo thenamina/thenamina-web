@@ -3,6 +3,9 @@ import './hero.css';
 
 export default function HomePage() {
   return (
+    <div style={{ fontSize: 28, fontWeight: 800, letterSpacing: 1 }}>
+      THE NAMINA
+    </div>
     <main>
       {/* ===== HERO 左文右圖 ===== */}
       <section className="hero">
