@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import './hero.css';
 export default function HomePage() {
   return (
     <main>
