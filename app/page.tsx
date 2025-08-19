@@ -1,11 +1,33 @@
 export default function HomePage() {
   return (
     <main>
-      {/* 🚀 Banner 區域 */}
-      <section style={{ padding: "40px", textAlign: "center" }}>
-        <h1>🚀 The Namina</h1>
-        <p>AI 八字起名平台</p>
-      </section>
+      {/* 🚀 Hero 區 */}
+<section style={{ 
+  padding: "80px 20px", 
+  textAlign: "center", 
+  background: "linear-gradient(135deg, #f0f4ff, #e6f0ff)" 
+}}>
+  <h1 style={{ 
+    fontSize: "48px", 
+    fontWeight: 900, 
+    marginBottom: "20px",
+    color: "#1a1a1a" 
+  }}>
+    The Namina
+  </h1>
+
+  <p style={{ 
+    fontSize: "20px", 
+    color: "#444", 
+    maxWidth: "600px", 
+    margin: "0 auto 30px" 
+  }}>
+    AI 八字智能起名平台 ✨  
+    結合專業算法，為你提供獨一無二嘅名字建議。
+  </p>
+
+  <a className="cta" href="/name">立即試用（送 1 個名）</a>
+</section>
 
       {/* 原本嘅內容 */}
       <section style={{ maxWidth: 960, width: '100%', padding: '32px 20px', margin: '0 auto' }}>
